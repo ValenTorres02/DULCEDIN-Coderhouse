@@ -72,6 +72,89 @@ header{
     grid-template-columns: repeat(4, 1fr)
 }
 
+.carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.img-carrousel{
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.producto-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column:1/2 ;
+    grid-row: 2;
+    padding: 20px;
+}
+
+.producto-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column:3/4 ;
+    grid-row: 2;
+    padding: 20px;
+}
+
+.producto-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column:1/2 ;
+    grid-row: 4;
+    padding: 20px;
+}
+
+.producto-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column:3/4 ;
+    grid-row: 4;
+    padding: 20px;
+}
+
+.img-index{
+    border: solid black 2px;
+}
+
+.visitar-index{
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    margin: 5px;
+    background-color:blanchedalmond;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.publicidad{
+    display: flex;
+    grid-column: 4/5;
+    grid-row: 1/5;
+    justify-content: center;
+    margin: 30px;
+}
+
+.img-publicidad{
+    width: 220px;
+}
+
 footer{
     background-color: rgb(245, 214, 241);
     display: grid;
@@ -116,6 +199,74 @@ footer{
     color: violet;
     grid-column: 2 /4;
     grid-row: 6;
+}
+
+.main-tortas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.main-croissant{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.main-sanguches{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.main-macarrons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.section-1{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 1;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    line-height: 40px;
+    font-size: larger;
+    background-color: blanchedalmond;
+}
+
+.section-2{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 2;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    line-height: 40px;
+    font-size: larger;
+    background-color: blanchedalmond;
+}
+
+.section-3{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 3;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    line-height: 40px;
+    font-size: larger;
+    background-color: blanchedalmond;
+}
+
+.section-4{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 4;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    line-height: 40px;
+    font-size: larger;
+    background-color: blanchedalmond;
 }
 
 .quienes-somos{
@@ -214,7 +365,6 @@ footer{
     font-size: larger;
     line-height: 40px;
 }
-
 
 /*=========================================================================================================================*/
 @media (min-width:600px) and (max-width:1200px){
