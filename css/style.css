@@ -69,7 +69,7 @@ header{
 
 .main-index{
     display: grid;
-    grid-template-columns: repeat(4, 1fr)
+    grid-template-columns: repeat(2, 1fr)
 }
 
 .carrousel{
@@ -81,8 +81,7 @@ header{
 }
 
 .img-carrousel{
-    width: 1000px;
-    height: 300px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +103,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column:3/4 ;
+    grid-column:2/3 ;
     grid-row: 2;
     padding: 20px;
 }
@@ -124,13 +123,20 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column:3/4 ;
+    grid-column:2/3 ;
     grid-row: 4;
     padding: 20px;
 }
 
 .img-index{
     border: solid black 2px;
+    width: 60%;
+}
+
+.txt-index{
+    font-size: x-small;
+    display: flex;
+    text-align: center;
 }
 
 .visitar-index{
@@ -139,20 +145,21 @@ header{
     color: violet;
     margin: 5px;
     background-color:blanchedalmond;
-    padding: 4px;
+    padding: 2px;
     border-radius: 5px;
+    font-size: x-small;
 }
 
 .publicidad{
     display: flex;
-    grid-column: 4/5;
-    grid-row: 1/5;
+    grid-column: 1/4;
+    grid-row: 5/6;
     justify-content: center;
-    margin: 30px;
+    margin: 15px;
 }
 
 .img-publicidad{
-    width: 220px;
+    width: 80%;
 }
 
 footer{
