@@ -18,6 +18,7 @@ body{
 }
 
 .button-inicio{
+    height: 30px;
     list-style: none;
     text-decoration: none;
     color: violet;
@@ -25,6 +26,12 @@ body{
     align-items: center;
     justify-content:center;
     justify-content: space-around;
+    transition: width 1s, height 1s, margin 2s;
+}
+
+.button-inicio:hover{
+    height: 45px;
+    margin: 0 auto;
 }
 
 header{
@@ -144,6 +151,11 @@ header{
 }
 
 .visitar-index{
+    display: flex;
+    width: 50px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     text-decoration: none;
     color: violet;
@@ -152,6 +164,13 @@ header{
     padding: 2px;
     border-radius: 5px;
     font-size: x-small;
+    transition: width 1s, height 1s, margin 2s;
+}
+
+.visitar-index:hover{
+    width: 15%;
+    height: 35px;
+    margin: 0 auto;
 }
 
 .publicidad-index{
@@ -399,7 +418,6 @@ footer{
 
 /*=========================================================================================================================*/
 @media (min-width:600px) and (max-width:1200px){
-    
       
 header{
     display:grid;
@@ -421,6 +439,13 @@ header{
     display: flex;
     margin-left: 15px;
     margin-right: 15px;
+    transition: width 1s, height 1s, margin 2s;
+}
+
+.lista-hover{
+    width: 15%;
+    height: 45px;
+    margin: 0 auto;
 }
 
 .lista-nav{
@@ -566,14 +591,26 @@ h4{
 }
 
 .visitar-index{
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     text-decoration: none;
     color: violet;
     margin: 5px;
     background-color:blanchedalmond;
-    padding: 5px;
+    padding: 2px;
     border-radius: 5px;
     font-size: medium;
+    transition: width 1s, height 1s, margin 2s;
+}
+
+.visitar-index:hover{
+    width: 15%;
+    height: 45px;
+    margin: 0 auto;
 }
 
 .publicidad-index{
@@ -658,6 +695,23 @@ footer{
 
 /*=========================================================================================================================*/
 @media (min-width:1201px){
+
+    .button-inicio{
+        height: 30px;
+        list-style: none;
+        text-decoration: none;
+        color: violet;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        justify-content: space-around;
+        transition: width 1s, height 1s, margin 2s;
+    }
+
+    .button-inicio:hover{
+        height: 45px;
+        margin: 0 auto;
+    }
 
     header{
         display: flex;
@@ -752,14 +806,26 @@ footer{
     }
     
     .visitar-index{
+        display: flex;
+        width: 80px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
         list-style: none;
         text-decoration: none;
         color: violet;
         margin: 5px;
         background-color:blanchedalmond;
-        padding: 5px;
+        padding: 2px;
         border-radius: 5px;
         font-size: medium;
+        transition: width 1s, height 1s, margin 2s;
+    }
+    
+    .visitar-index:hover{
+        width: 15%;
+        height: 45px;
+        margin: 0 auto;
     }
     
     .publicidad-index{
