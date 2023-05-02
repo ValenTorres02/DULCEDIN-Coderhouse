@@ -1,596 +1,744 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: lightcyan;
+body {
+  background-color: lightcyan;
 }
 
-.body-error{
-    background-image: url("../img/fondo-mobile.jpg");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button-inicio {
+  height: 30px;
+  list-style: none;
+  text-decoration: none;
+  color: violet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  transition: width 1s, height 1s, margin 2s;
+}
+.button-inicio .button-inicio:hover {
+  height: 45px;
+  margin: 0 auto;
 }
 
-.button-inicio{
+header {
+  background-color: rgb(245, 214, 241);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .img-header {
+  width: 160px;
+  height: 75px;
+}
+header .ul-nav {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+header .ul-nav .li-nav {
+  margin: 12px;
+}
+header .ul-nav .li-nav .lista {
+  list-style: none;
+  text-decoration: none;
+  color: violet;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: blanchedalmond;
+  padding: 1px;
+}
+header .barra-busqueda {
+  display: none;
+}
+
+footer {
+  background-color: rgb(245, 214, 241);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+footer .img-footer {
+  width: 160px;
+  height: 75px;
+  grid-column: 2/3;
+  grid-row: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+footer .redes-sociales {
+  grid-column: 1/4;
+  grid-row: 4;
+  justify-content: space-around;
+  display: flex;
+}
+footer .redes-sociales .lista-redes {
+  list-style: none;
+  text-decoration: none;
+  color: violet;
+  margin: 5px;
+  background-color: blanchedalmond;
+  padding: 4px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+footer .contacto {
+  list-style: none;
+  text-decoration: none;
+  color: violet;
+  grid-column: 2/4;
+  grid-row: 6;
+}
+footer .quienes-somos {
+  list-style: none;
+  text-decoration: none;
+  color: violet;
+  grid-column: 2/3;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+}
+footer .derechos {
+  color: rgba(0, 0, 0, 0.274);
+  grid-column: 1/4;
+  grid-row: 5/6;
+}
+
+.body-error {
+  background-image: url("../img/fondo-mobile.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-index .carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.main-index .carrousel .img-carrousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.main-index .producto-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 2;
+  padding: 20px;
+  gap: 10px;
+}
+.main-index .producto-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 2;
+  padding: 20px;
+  gap: 10px;
+}
+.main-index .producto-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/2;
+  grid-row: 4;
+  padding: 20px;
+  gap: 10px;
+}
+.main-index .producto-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 4;
+  padding: 20px;
+  gap: 10px;
+}
+.main-index .img-index {
+  border: solid black 2px;
+  width: 60%;
+}
+.main-index .txt-index {
+  font-size: x-small;
+  display: flex;
+  text-align: center;
+}
+.main-index .visitar-index {
+  display: flex;
+  width: 50px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  color: violet;
+  margin: 5px;
+  background-color: blanchedalmond;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: x-small;
+  transition: width 1s, height 1s, margin 2s;
+}
+.main-index .visitar-index .visitar-index:hover {
+  width: 15%;
+  height: 35px;
+  margin: 0 auto;
+}
+.main-index .publicidad-index {
+  display: flex;
+  grid-column: 1/3;
+  grid-row: 5/6;
+  justify-content: center;
+  margin: 15px;
+}
+.main-index .publicidad-index .img-publicidad-index {
+  width: 80%;
+}
+
+.main-tortas {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.main-tortas .publicidad-pags {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.main-tortas .publicidad-pags .img-publicidad-pags {
+  width: 80%;
+}
+.main-tortas .section-1 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 1;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-tortas .section-1 .img-pags {
+  width: 70%;
+}
+.main-tortas .section-1 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-tortas .section-2 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 2;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-tortas .section-2 .img-pags {
+  width: 70%;
+}
+.main-tortas .section-2 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-tortas .section-3 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 3;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-tortas .section-3 .img-pags {
+  width: 70%;
+}
+.main-tortas .section-3 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-tortas .section-4 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 4;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-tortas .section-4 .img-pags {
+  width: 70%;
+}
+.main-tortas .section-4 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+
+.main-croissant {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.main-croissant .publicidad-pags {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.main-croissant .publicidad-pags .img-publicidad-pags {
+  width: 80%;
+}
+.main-croissant .section-1 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 1;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-croissant .section-1 .img-pags {
+  width: 70%;
+}
+.main-croissant .section-1 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-croissant .section-2 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 2;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-croissant .section-2 .img-pags {
+  width: 70%;
+}
+.main-croissant .section-2 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-croissant .section-3 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 3;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-croissant .section-3 .img-pags {
+  width: 70%;
+}
+.main-croissant .section-3 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-croissant .section-4 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 4;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-croissant .section-4 .img-pags {
+  width: 70%;
+}
+.main-croissant .section-4 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+
+.main-sanguches {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.main-sanguches .publicidad-pags {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.main-sanguches .publicidad-pags .img-publicidad-pags {
+  width: 80%;
+}
+.main-sanguches .section-1 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 1;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-sanguches .section-1 .img-pags {
+  width: 70%;
+}
+.main-sanguches .section-1 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-sanguches .section-2 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 2;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-sanguches .section-2 .img-pags {
+  width: 70%;
+}
+.main-sanguches .section-2 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-sanguches .section-3 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 3;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-sanguches .section-3 .img-pags {
+  width: 70%;
+}
+.main-sanguches .section-3 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-sanguches .section-4 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 4;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-sanguches .section-4 .img-pags {
+  width: 70%;
+}
+.main-sanguches .section-4 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+
+.main-macarrons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.main-macarrons .publicidad-pags {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.main-macarrons .publicidad-pags .img-publicidad-pags {
+  width: 80%;
+}
+.main-macarrons .section-1 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 1;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-macarrons .section-1 .img-pags {
+  width: 70%;
+}
+.main-macarrons .section-1 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-macarrons .section-2 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 2;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-macarrons .section-2 .img-pags {
+  width: 70%;
+}
+.main-macarrons .section-2 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-macarrons .section-3 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 3;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-macarrons .section-3 .img-pags {
+  width: 70%;
+}
+.main-macarrons .section-3 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+.main-macarrons .section-4 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/4;
+  grid-row: 4;
+  padding: 30px;
+  gap: 5px;
+  align-items: center;
+  line-height: 30px;
+  font-size: larger;
+}
+.main-macarrons .section-4 .img-pags {
+  width: 70%;
+}
+.main-macarrons .section-4 .txt-pags {
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: solid black 2px;
+}
+
+.main-contacto {
+  display: block;
+}
+.main-contacto .h2-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: blanchedalmond;
+  color: violet;
+  border-radius: 10px;
+  padding: 5px;
+}
+.main-contacto .lista-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 10px;
+}
+.main-contacto .lista-contacto .boton-contacto {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(255, 235, 205, 0.959);
+  border-radius: 10px;
+  padding: 10px;
+}
+.main-error .boton-error {
+  list-style: none;
+  color: black;
+  font-size: larger;
+}
+
+.main-quienes-somos {
+  padding: 50px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-quienes-somos .h1-quienes-somos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.main-quienes-somos .img-quienes-somos {
+  border: 3px rgb(245, 214, 241) solid;
+  width: 275px;
+  height: 200px;
+  margin: 10px;
+}
+.main-quienes-somos .txt-quienes-somos {
+  font-size: larger;
+  line-height: 40px;
+}
+
+/*=========================================================================================================================*/
+@media (min-width: 600px) and (max-width: 1200px) {
+  .button-inicio {
     height: 30px;
     list-style: none;
     text-decoration: none;
     color: violet;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     justify-content: space-around;
     transition: width 1s, height 1s, margin 2s;
-}
-
-.button-inicio:hover{
+  }
+  .button-inicio .button-inicio:hover {
     height: 45px;
     margin: 0 auto;
-}
-
-header{
-    background-color:  rgb(245, 214, 241);
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-}
-
-.img-header{
-    width: 160px ;
-    height: 75px;
-}
-
-.ul-nav{
-    margin-top: 15px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.barra-busqueda{
-    display: none;
-}
-
-.li-nav{
-    margin: 12px;
-}
-
-.lista{
-    list-style: none;
-    text-decoration: none;
-    color: violet;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color:blanchedalmond;
-    padding: 1px;
-}
-
-.main-index{
+  }
+  header {
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
-}
-
-.carrousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: 1/3;
-    grid-row: 1;
-}
-
-.img-carrousel{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-
-.producto-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column:1/2 ;
-    grid-row: 2;
-    padding: 20px;
-    gap: 10px;
-}
-
-.producto-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column:2/3 ;
-    grid-row: 2;
-    padding: 20px;
-    gap: 10px;
-}
-
-.producto-3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column:1/2 ;
-    grid-row: 4;
-    padding: 20px;
-    gap: 10px;
-}
-
-.producto-4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column:2/3 ;
-    grid-row: 4;
-    padding: 20px;
-    gap: 10px;
-}
-
-.img-index{
-    border: solid black 2px;
-    width: 60%;
-}
-
-.txt-index{
-    font-size: x-small;
-    display: flex;
-    text-align: center;
-}
-
-.visitar-index{
-    display: flex;
-    width: 50px;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
-    color: violet;
-    margin: 5px;
-    background-color:blanchedalmond;
-    padding: 2px;
-    border-radius: 5px;
-    font-size: x-small;
-    transition: width 1s, height 1s, margin 2s;
-}
-
-.visitar-index:hover{
-    width: 15%;
-    height: 35px;
-    margin: 0 auto;
-}
-
-.publicidad-index{
-    display: flex;
-    grid-column: 1/3;
-    grid-row: 5/6;
-    justify-content: center;
-    margin: 15px;
-}
-
-.img-publicidad-index{
-    width: 80%;
-}
-
-footer{
-    background-color: rgb(245, 214, 241);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    gap: 20px;
-}
-
-.img-footer{
-    width: 160px ;
-    height: 75px;
-    grid-column:2/ 3 ;
-    grid-row: 1;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.lista-redes{
-    list-style: none;
-    text-decoration: none;
-    color: violet;
-    margin: 5px;
-    background-color:blanchedalmond;
-    padding: 4px;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.redes-sociales{
-    grid-column: 1 /4;
-    grid-row: 4;
-    justify-content: space-around;
-    display: flex;
-}
-
-.contacto{
-    list-style: none;
-    text-decoration: none;
-    color: violet;
-    grid-column: 2 /4;
-    grid-row: 6;
-}
-
-.main-tortas{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-}
-
-.main-croissant{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-}
-
-.main-sanguches{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-}
-
-.main-macarrons{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-}
-
-.publicidad-pags{
-    display: flex;
-    justify-content: center;
-    margin: 15px;
-}
-
-.img-publicidad-pags{
-    width: 80%;
-}
-
-.txt-pags{
-    background-color: blanchedalmond;
-    padding: 10px;
-    border: solid black 2px;
-}
-
-.section-1{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 1;
-    padding: 30px;
-    gap: 5px;
-    align-items: center;
-    line-height: 30px;
-    font-size: larger;
-}
-
-.section-2{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 2;
-    padding: 30px;
-    gap: 5px;
-    align-items: center;
-    line-height: 30px;
-    font-size: larger;
-}
-
-.section-3{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 3;
-    padding: 30px;
-    gap: 5px;
-    align-items: center;
-    line-height: 30px;
-    font-size: larger;
-}
-
-.section-4{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 4;
-    padding: 30px;
-    gap: 5px;
-    align-items: center;
-    line-height: 30px;
-    font-size: larger;
-}
-
-.img-pags{
-    width: 70%;
-}
-
-.quienes-somos{
-    list-style: none;
-    text-decoration: none;
-    color: violet;
-    grid-column: 2 /3;
-    grid-row: 2;
-    display: flex;
-    justify-content: center;
-}
-
-.derechos{
-    color: rgba(0, 0, 0, 0.274);
-    grid-column: 1 /4;
-    grid-row: 5/ 6;
-}
-
-.main-contacto{
-    display: block;
-}
-
-.h2-contacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    background-color: blanchedalmond;
-    color: violet;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.lista-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:60px;
-    padding: 10px;
-}
-
-.boton-contacto{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.main-error{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    text-align: center;
-    flex-direction: column;
-    gap: 10px;
-    background-color: rgba(255, 235, 205, 0.959);
-    border-radius:10px ;
-    padding: 10px;
-}
-
-.boton-error{
-    list-style: none;
-    color: black;
-    font-size: larger;
-}
-
-.main-quienes-somos{
-    padding: 50px;
-    line-height: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.h1-quienes-somos{
-    display: flex;
-    justify-content: center;
-    margin-bottom:50px;
-}
-
-.img-quienes-somos{
-    border: 3px rgb(245, 214, 241) solid;
-    width: 275px;
-    height: 200px;
-    margin: 10px;
-}
-
-.img2-quienes-somos{
-    border: 3px rgb(245, 214, 241) solid;
-    width: 275px;
-    height: 200px;
-    margin: 10px;
-}
-
-.txt-quienes-somos{
-    font-size: larger;
-    line-height: 40px;
-}
-
-/*=========================================================================================================================*/
-@media (min-width:600px) and (max-width:1200px){
-      
-header{
-    display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(100px, 8vh);
-}
-
-.img-header{
-    width: 220px ;
+  }
+  header .img-header {
+    width: 220px;
     height: 100px;
-}
-
-.barra-busqueda{
+  }
+  header .barra-busqueda {
     display: flex;
     justify-content: center;
-}
-
-.lista{
+  }
+  header .lista-nav {
+    grid-column: span 2;
+  }
+  header .lista-nav .ul-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  header .lista-nav .ul-nav .lista {
     display: flex;
     margin-left: 15px;
     margin-right: 15px;
     transition: width 1s, height 1s, margin 2s;
-}
-
-.lista-hover{
+  }
+  header .lista-nav .ul-nav .lista .lista-hover {
     width: 15%;
     height: 45px;
     margin: 0 auto;
-}
-
-.lista-nav{
-    grid-column: span 2;
-}
-
-.ul-nav{
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-index{
+  }
+  .main-index {
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
-}
-
-.carrousel{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-index .carrousel {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-column: 1/3;
     grid-row: 1;
-}
-
-.img-carrousel{
+  }
+  .main-index .carrousel .img-carrousel {
     width: 85%;
     max-height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-}
-
-.producto-1{
+  }
+  .main-index .producto-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column:1/2 ;
+    grid-column: 1/2;
     grid-row: 2;
     padding: 20px;
     gap: 10px;
-}
-
-.producto-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column:2/3 ;
-    grid-row: 2;
-    padding: 20px;
-    gap: 10px;
-}
-
-.producto-3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column:1/2 ;
-    grid-row: 4;
-    padding: 20px;
-    gap: 10px;
-}
-
-.producto-4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-column:2/3 ;
-    grid-row: 4;
-    padding: 20px;
-    gap: 10px;
-}
-
-.section-1{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 1;
-    padding: 30px;
-    gap: 5px;
-    align-items: center;
-    line-height: 30px;
-    font-size: larger;
-}
-
-.section-2{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 2;
-    padding: 30px;
-    gap: 5px;
-    align-items: center;
-    line-height: 30px;
-    font-size: larger;
-}
-
-.section-3{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 3;
-    padding: 30px;
-    gap: 5px;
-    align-items: center;
-    line-height: 30px;
-    font-size: larger;
-}
-
-.section-4{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 4;
-    padding: 30px;
-    gap: 5px;
-    align-items: center;
-    line-height: 30px;
-    font-size: larger;
-}
-
-.img-pags{
-    width: 50%;
-}
-
-h4{
+  }
+  .main-index .producto-1 strong {
     font-size: x-large;
-}
-
-.img-index{
+  }
+  .main-index .producto-1 .img-index {
     border: solid black 2px;
     width: 60%;
-}
-
-.txt-index{
-    font-size:medium;
+  }
+  .main-index .producto-1 .txt-index {
+    font-size: medium;
     display: flex;
     text-align: center;
-}
-
-.visitar-index{
+  }
+  .main-index .producto-1 .visitar-index {
     display: flex;
     width: 80px;
     height: 30px;
@@ -600,33 +748,199 @@ h4{
     text-decoration: none;
     color: violet;
     margin: 5px;
-    background-color:blanchedalmond;
+    background-color: blanchedalmond;
     padding: 2px;
     border-radius: 5px;
     font-size: medium;
     transition: width 1s, height 1s, margin 2s;
-}
-
-.visitar-index:hover{
+  }
+  .main-index .producto-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2;
+    padding: 20px;
+    gap: 10px;
+  }
+  .main-index .producto-2 strong {
+    font-size: x-large;
+  }
+  .main-index .producto-2 .img-index {
+    border: solid black 2px;
+    width: 60%;
+  }
+  .main-index .producto-2 .txt-index {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+  }
+  .main-index .producto-2 .visitar-index {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    margin: 5px;
+    background-color: blanchedalmond;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: medium;
+    transition: width 1s, height 1s, margin 2s;
+  }
+  .main-index .producto-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 4;
+    padding: 20px;
+    gap: 10px;
+  }
+  .main-index .producto-3 strong {
+    font-size: x-large;
+  }
+  .main-index .producto-3 .img-index {
+    border: solid black 2px;
+    width: 60%;
+  }
+  .main-index .producto-3 .txt-index {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+  }
+  .main-index .producto-3 .visitar-index {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    margin: 5px;
+    background-color: blanchedalmond;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: medium;
+    transition: width 1s, height 1s, margin 2s;
+  }
+  .main-index .producto-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 4;
+    padding: 20px;
+    gap: 10px;
+  }
+  .main-index .producto-4 strong {
+    font-size: x-large;
+  }
+  .main-index .producto-4 .img-index {
+    border: solid black 2px;
+    width: 60%;
+  }
+  .main-index .producto-4 .txt-index {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+  }
+  .main-index .producto-4 .visitar-index {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    margin: 5px;
+    background-color: blanchedalmond;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: medium;
+    transition: width 1s, height 1s, margin 2s;
+  }
+  .main-index .producto-4 .visitar-index .visitar-index:hover {
     width: 15%;
     height: 45px;
     margin: 0 auto;
-}
-
-.publicidad-index{
+  }
+  .main-index .producto-4 .publicidad-index {
     display: flex;
     grid-column: 1/3;
     grid-row: 5/6;
     justify-content: center;
     margin: 15px;
-}
-
-.img-publicidad-index{
+  }
+  .main-index .producto-4 .publicidad-index .img-publicidad-index {
     width: 80%;
     max-height: 90%;
-}
-
-footer{
+  }
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 1;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .section-1 .img-pags {
+    width: 50%;
+  }
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 2;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .section-2 .img-pags {
+    width: 50%;
+  }
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 3;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .section-3 .img-pags {
+    width: 50%;
+  }
+  .section-4 {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 4;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .section-4 .img-pags {
+    width: 50%;
+  }
+  footer {
     background-color: rgb(245, 214, 241);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -634,356 +948,541 @@ footer{
     align-items: center;
     padding: 20px;
     gap: 20px;
-}
-
-.redes-sociales{
-    grid-column: 4 /5;
+  }
+  footer .redes-sociales {
+    grid-column: 4/5;
     grid-row: 1/4;
     justify-content: end;
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-
-.lista-redes{
+  }
+  footer .redes-sociales .lista-redes {
     width: 100px;
     text-align: center;
-}
-
-.contacto{
-    list-style: none;
-    text-decoration: none;
-    color: violet;
-    grid-column: 2/ 4 ;
-    grid-row: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quienes-somos{
-    list-style: none;
-    text-decoration: none;
-    color: violet;
-    grid-column: 2 /4;
-    grid-row:  2;
-}
-
-.img-footer{
-    width: 160px ;
+  }
+  footer .img-footer {
+    width: 160px;
     height: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    grid-column: 1/ 3;
+    grid-column: 1/3;
     grid-row: 2;
-}
-
-.derechos{
+  }
+  footer .derechos {
     color: rgba(0, 0, 0, 0.274);
-    grid-column: 1 /5;
-    grid-row: 4/ 5;
-}
-
-.txt-quienes-somos{
+    grid-column: 1/5;
+    grid-row: 4/5;
+  }
+  footer .contacto {
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    grid-column: 2/4;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .quienes-somos {
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  .txt-quienes-somos {
     font-size: x-large;
     line-height: 45px;
+  }
 }
-
-}
-
 /*=========================================================================================================================*/
-@media (min-width:1201px){
-
-    .button-inicio{
-        height: 30px;
-        list-style: none;
-        text-decoration: none;
-        color: violet;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        justify-content: space-around;
-        transition: width 1s, height 1s, margin 2s;
-    }
-
-    .button-inicio:hover{
-        height: 45px;
-        margin: 0 auto;
-    }
-
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .barra-busqueda{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .main-index{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr)
-    }
-    
-    .carrousel{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        grid-column: 1/6;
-        grid-row: 1;
-    }
-    
-    .img-carrousel{
-        width: 85%;
-        max-height: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-    }
-    
-    .producto-1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-column:1/3 ;
-        grid-row: 2;
-        padding: 20px;
-        gap: 10px;
-    }
-    
-    .producto-2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-column:3/5 ;
-        grid-row: 2;
-        padding: 20px;
-        gap: 10px;
-    }
-    
-    .producto-3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-column:1/3 ;
-        grid-row: 4;
-        padding: 20px;
-        gap: 10px;
-    }
-    
-    .producto-4{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        grid-column:3/5 ;
-        grid-row: 4;
-        padding: 20px;
-        gap: 10px;
-    }
-    
-    h4{
-        font-size: x-large;
-    }
-    
-    .img-index{
-        border: solid black 2px;
-        width: 60%;
-    }
-    
-    .txt-index{
-        font-size:medium;
-        display: flex;
-        text-align: center;
-    }
-    
-    .visitar-index{
-        display: flex;
-        width: 80px;
-        height: 30px;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        text-decoration: none;
-        color: violet;
-        margin: 5px;
-        background-color:blanchedalmond;
-        padding: 2px;
-        border-radius: 5px;
-        font-size: medium;
-        transition: width 1s, height 1s, margin 2s;
-    }
-    
-    .visitar-index:hover{
-        width: 15%;
-        height: 45px;
-        margin: 0 auto;
-    }
-    
-    .publicidad-index{
-        display: flex;
-        grid-column: 5/6;
-        grid-row: 2/5;
-        justify-content: center;
-        margin: 15px;
-    }
-    
-    .img-publicidad-index{
-        width: 80%;
-        max-height: 90%;
-    }
-
-    .main-tortas{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
-    
-    .main-croissant{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
-    
-    .main-sanguches{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
-    
-    .main-macarrons{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-    }
-
-    .section-1{
-        display: flex;
-        flex-direction: row;
-        grid-column: 1/4;
-        grid-row: 1;
-        padding: 30px;
-        gap: 5px;
-        align-items: center;
-        line-height: 30px;
-        font-size: larger;
-    }
-    
-    .section-2{
-        display: flex;
-        flex-direction: row;
-        grid-column: 1/4;
-        grid-row: 2;
-        padding: 30px;
-        gap: 5px;
-        align-items: center;
-        line-height: 30px;
-        font-size: larger;
-    }
-    
-    .section-3{
-        display: flex;
-        flex-direction: row;
-        grid-column: 1/4;
-        grid-row: 3;
-        padding: 30px;
-        gap: 5px;
-        align-items: center;
-        line-height: 30px;
-        font-size: larger;
-    }
-    
-    .section-4{
-        display: flex;
-        flex-direction: row;
-        grid-column: 1/4;
-        grid-row: 4;
-        padding: 30px;
-        gap: 5px;
-        align-items: center;
-        line-height: 30px;
-        font-size: larger;
-    }
-
-    .publicidad-pags{
-        display: flex;
-        grid-column: 4/6;
-        grid-row: 1/5;
-
-        margin: 15px;
-    }
-
-    .img-publicidad-pags{
-        width: 60%;
-    }
-
-    footer{
-        background-color: rgb(245, 214, 241);
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        gap: 20px;
-    }
-    
-    .redes-sociales{
-        grid-column: 4 /5;
-        grid-row: 1/4;
-        justify-content: end;
-        align-items: center;
-        display: flex;
-    }
-    
-    .lista-redes{
-        width: 100px;
-        text-align: center;
-    }
-    
-    .contacto{
-        list-style: none;
-        text-decoration: none;
-        color: violet;
-        grid-column: 3/ 4 ;
-        grid-row: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .quienes-somos{
-        list-style: none;
-        text-decoration: none;
-        color: violet;
-        grid-column: 2 /3;
-        grid-row:  2;
-    }
-    
-    .img-footer{
-        width: 160px ;
-        height: 75px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        grid-column: 1/ 3;
-        grid-row: 2;
-    }
-    
-    .derechos{
-        color: rgba(0, 0, 0, 0.274);
-        grid-column: 1 /5;
-        grid-row: 4/ 5;
-    }
-
-    .txt-quienes-somos{
-        font-size: x-large;
-        line-height: 60px;
-    }
-
-
+@media (min-width: 1201px) {
+  .button-inicio {
+    height: 30px;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    transition: width 1s, height 1s, margin 2s;
+  }
+  .button-inicio .button-inicio:hover {
+    height: 45px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header .barra-busqueda {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-index {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .main-index .carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/6;
+    grid-row: 1;
+  }
+  .main-index .carrousel .img-carrousel {
+    width: 85%;
+    max-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .main-index .producto-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 2;
+    padding: 20px;
+    gap: 10px;
+  }
+  .main-index .producto-1 strong {
+    font-size: x-large;
+  }
+  .main-index .producto-1 .img-index {
+    border: solid black 2px;
+    width: 60%;
+  }
+  .main-index .producto-1 .txt-index {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+  }
+  .main-index .producto-1 .visitar-index {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    margin: 5px;
+    background-color: blanchedalmond;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: medium;
+    transition: width 1s, height 1s, margin 2s;
+  }
+  .main-index .producto-1 .visitar-index .visitar-index:hover {
+    width: 15%;
+    height: 45px;
+    margin: 0 auto;
+  }
+  .main-index .producto-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3/5;
+    grid-row: 2;
+    padding: 20px;
+    gap: 10px;
+  }
+  .main-index .producto-2 strong {
+    font-size: x-large;
+  }
+  .main-index .producto-2 .img-index {
+    border: solid black 2px;
+    width: 60%;
+  }
+  .main-index .producto-2 .txt-index {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+  }
+  .main-index .producto-2 .visitar-index {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    margin: 5px;
+    background-color: blanchedalmond;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: medium;
+    transition: width 1s, height 1s, margin 2s;
+  }
+  .main-index .producto-2 .visitar-index .visitar-index:hover {
+    width: 15%;
+    height: 45px;
+    margin: 0 auto;
+  }
+  .main-index .producto-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
+    grid-row: 4;
+    padding: 20px;
+    gap: 10px;
+  }
+  .main-index .producto-3 strong {
+    font-size: x-large;
+  }
+  .main-index .producto-3 .img-index {
+    border: solid black 2px;
+    width: 60%;
+  }
+  .main-index .producto-3 .txt-index {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+  }
+  .main-index .producto-3 .visitar-index {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    margin: 5px;
+    background-color: blanchedalmond;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: medium;
+    transition: width 1s, height 1s, margin 2s;
+  }
+  .main-index .producto-3 .visitar-index .visitar-index:hover {
+    width: 15%;
+    height: 45px;
+    margin: 0 auto;
+  }
+  .main-index .producto-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3/5;
+    grid-row: 4;
+    padding: 20px;
+    gap: 10px;
+  }
+  .main-index .producto-4 strong {
+    font-size: x-large;
+  }
+  .main-index .producto-4 .img-index {
+    border: solid black 2px;
+    width: 60%;
+  }
+  .main-index .producto-4 .txt-index {
+    font-size: medium;
+    display: flex;
+    text-align: center;
+  }
+  .main-index .producto-4 .visitar-index {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    margin: 5px;
+    background-color: blanchedalmond;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: medium;
+    transition: width 1s, height 1s, margin 2s;
+  }
+  .main-index .producto-4 .visitar-index .visitar-index:hover {
+    width: 15%;
+    height: 45px;
+    margin: 0 auto;
+  }
+  .main-index .publicidad-index {
+    display: flex;
+    grid-column: 5/6;
+    grid-row: 2/5;
+    justify-content: center;
+    margin: 15px;
+  }
+  .main-index .publicidad-index .img-publicidad-index {
+    width: 80%;
+    max-height: 90%;
+  }
+  .main-tortas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-tortas .section-1 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 1;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-tortas .section-2 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 2;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-tortas .section-3 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 3;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-tortas .section-4 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 4;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-croissant {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-croissant .section-1 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 1;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-croissant .section-2 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 2;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-croissant .section-3 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 3;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-croissant .section-4 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 4;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-sanguches {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-sanguches .section-1 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 1;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-sanguches .section-2 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 2;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-sanguches .section-3 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 3;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-sanguches .section-4 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 4;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-macarrons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-macarrons .section-1 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 1;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-macarrons .section-2 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 2;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-macarrons .section-3 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 3;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .main-macarrons .section-4 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1/4;
+    grid-row: 4;
+    padding: 30px;
+    gap: 5px;
+    align-items: center;
+    line-height: 30px;
+    font-size: larger;
+  }
+  .publicidad-pags {
+    display: flex;
+    grid-column: 4/6;
+    grid-row: 1/5;
+    margin: 15px;
+  }
+  .publicidad-pags .img-publicidad-pags {
+    width: 60%;
+  }
+  footer {
+    background-color: rgb(245, 214, 241);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  footer .redes-sociales {
+    grid-column: 4/5;
+    grid-row: 1/4;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+  }
+  footer .redes-sociales .lista-redes {
+    width: 100px;
+    text-align: center;
+  }
+  footer .contacto {
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    grid-column: 3/4;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .quienes-somos {
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+  footer .img-footer {
+    width: 160px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  footer .derechos {
+    color: rgba(0, 0, 0, 0.274);
+    grid-column: 1/5;
+    grid-row: 4/5;
+  }
+  .txt-quienes-somos {
+    font-size: xx-large;
+    line-height: 60px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
