@@ -54,6 +54,8 @@ header .ul-nav .li-nav .lista {
   overflow: hidden;
   background-color: blanchedalmond;
   padding: 1px;
+  animation-name: CambioColor;
+  animation-duration: 5s;
 }
 header .barra-busqueda {
   display: none;
@@ -252,6 +254,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-tortas .section-2 {
   display: flex;
@@ -271,6 +275,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-tortas .section-3 {
   display: flex;
@@ -290,6 +296,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-tortas .section-4 {
   display: flex;
@@ -309,6 +317,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 
 .main-croissant {
@@ -341,6 +351,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-croissant .section-2 {
   display: flex;
@@ -360,6 +372,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-croissant .section-3 {
   display: flex;
@@ -379,6 +393,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-croissant .section-4 {
   display: flex;
@@ -398,6 +414,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 
 .main-sanguches {
@@ -430,6 +448,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-sanguches .section-2 {
   display: flex;
@@ -449,6 +469,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-sanguches .section-3 {
   display: flex;
@@ -468,6 +490,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-sanguches .section-4 {
   display: flex;
@@ -487,6 +511,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 
 .main-macarrons {
@@ -519,6 +545,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-macarrons .section-2 {
   display: flex;
@@ -538,6 +566,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-macarrons .section-3 {
   display: flex;
@@ -557,6 +587,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 .main-macarrons .section-4 {
   display: flex;
@@ -576,6 +608,8 @@ footer .derechos {
   background-color: blanchedalmond;
   padding: 10px;
   border: solid black 2px;
+  animation-name: CambioColortxt;
+  animation-duration: 5s;
 }
 
 .main-contacto {
@@ -1482,6 +1516,22 @@ footer .derechos {
   .txt-quienes-somos {
     font-size: xx-large;
     line-height: 60px;
+  }
+  @keyframes CambioColor {
+    from {
+      color: blanchedalmond;
+    }
+    to {
+      color: violet;
+    }
+  }
+  @keyframes CambioColortxt {
+    from {
+      color: blanchedalmond;
+    }
+    to {
+      color: black;
+    }
   }
 }
 
