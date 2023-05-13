@@ -19,7 +19,7 @@ body {
   justify-content: space-around;
   transition: width 1s, height 1s, margin 2s;
 }
-.button-inicio .button-inicio:hover {
+.button-inicio:hover {
   height: 45px;
   margin: 0 auto;
 }
@@ -59,6 +59,13 @@ header .ul-nav .li-nav .lista {
 }
 header .barra-busqueda {
   display: none;
+}
+
+.titulo{
+  background-color: blanchedalmond;
+  text-align: center;
+  border-radius:10px ;
+  padding: 10px;
 }
 
 footer {
@@ -115,6 +122,14 @@ footer .derechos {
   color: rgba(0, 0, 0, 0.274);
   grid-column: 1/4;
   grid-row: 5/6;
+}
+
+footer .colaboraciones {
+  list-style: none;
+  text-decoration: none;
+  color: violet;
+  grid-column: 2 /4;
+  grid-row: 3;
 }
 
 .body-error {
@@ -683,6 +698,35 @@ footer .derechos {
   line-height: 40px;
 }
 
+.main-colaboraciones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-colaboraciones{
+  width: 350px;
+  height: 350px;
+}
+
+.article-colaboraciones{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:rgb(255, 235, 205, 0.959) ;
+}
+
+.txt-colaboraciones{
+  line-height: 20px;
+  font-weight: bold;
+}
+
 /*=========================================================================================================================*/
 @media (min-width: 600px) and (max-width: 1200px) {
   .button-inicio {
@@ -1025,13 +1069,38 @@ footer .derechos {
     text-decoration: none;
     color: violet;
     grid-column: 2/4;
+    grid-row: 1;
+  }
+  footer .colaboraciones{
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    grid-column: 2/4;
     grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .txt-quienes-somos {
     font-size: x-large;
     line-height: 45px;
   }
 }
+
+.article-colaboraciones{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:60px ;
+  padding-right: 60px;
+  background-color:rgb(255, 235, 205, 0.959) ;
+}
+
 /*=========================================================================================================================*/
 @media (min-width: 1201px) {
   .button-inicio {
@@ -1464,14 +1533,14 @@ footer .derechos {
   footer {
     background-color: rgb(245, 214, 241);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
     padding: 20px;
     gap: 20px;
   }
   footer .redes-sociales {
-    grid-column: 4/5;
+    grid-column: 5/6;
     grid-row: 1/4;
     justify-content: end;
     align-items: center;
@@ -1498,6 +1567,16 @@ footer .derechos {
     grid-column: 2/3;
     grid-row: 2;
   }
+  footer .colaboraciones{
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    grid-column: 4/5;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   footer .img-footer {
     width: 160px;
     height: 75px;
@@ -1510,13 +1589,34 @@ footer .derechos {
   }
   footer .derechos {
     color: rgba(0, 0, 0, 0.274);
-    grid-column: 1/5;
+    grid-column: 1/6;
     grid-row: 4/5;
   }
   .txt-quienes-somos {
     font-size: xx-large;
     line-height: 60px;
   }
+
+  .img-colaboraciones{
+    width: 500px;
+    height: 500px;
+  }
+
+  .article-colaboraciones{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:300px ;
+    padding-right: 300px;
+    background-color:rgb(255, 235, 205, 0.959) ;
+  }
+
+
   @keyframes CambioColor {
     from {
       color: blanchedalmond;

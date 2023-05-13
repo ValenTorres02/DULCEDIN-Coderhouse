@@ -1,0 +1,117 @@
+.button-inicio{
+    height: 30px;
+    list-style: none;
+    text-decoration: none;
+    color: violet;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    justify-content: space-around;
+    transition: width 1s, height 1s, margin 2s;
+        .button-inicio:hover{
+        height: 45px;
+        margin: 0 auto;
+        }
+}
+
+/*=========================================================================================================================*/
+@media (min-width:600px) and (max-width:1200px){
+    
+    .button-inicio{
+        height: 30px;
+        list-style: none;
+        text-decoration: none;
+        color: violet;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        justify-content: space-around;
+        transition: width 1s, height 1s, margin 2s;
+            .button-inicio:hover{
+            height: 45px;
+            margin: 0 auto;
+            }
+    }
+
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/4;
+        grid-row: 1;
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        line-height: 30px;
+        font-size: larger;
+        .img-pags{
+            width: 50%;
+        }
+    }
+    
+    .section-2{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/4;
+        grid-row: 2;
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        line-height: 30px;
+        font-size: larger;
+        .img-pags{
+            width: 50%;
+        }
+    }
+    
+    .section-3{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/4;
+        grid-row: 3;
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        line-height: 30px;
+        font-size: larger;
+        .img-pags{
+            width: 50%;
+        }
+    }
+    
+    .section-4{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/4;
+        grid-row: 4;
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        line-height: 30px;
+        font-size: larger;
+        .img-pags{
+            width: 50%;
+        }
+    }
+
+}
+
+/*=========================================================================================================================*/
+@media (min-width:1201px){
+
+    .button-inicio{
+        height: 30px;
+        list-style: none;
+        text-decoration: none;
+        color: violet;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        justify-content: space-around;
+        transition: width 1s, height 1s, margin 2s;
+            .button-inicio:hover{
+            height: 45px;
+            margin: 0 auto;
+            }
+    }
+
+}

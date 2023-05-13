@@ -1,0 +1,165 @@
+.main-tortas{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    .publicidad-pags{
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        .img-publicidad-pags{
+            width: 80%;
+        }
+    }
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/4;
+        grid-row: 1;
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        line-height: 30px;
+        font-size: larger;
+        .img-pags{
+            width: 70%;
+        }
+        .txt-pags{
+            background-color: blanchedalmond;
+            padding: 10px;
+            border: solid black 2px;
+            animation-name: CambioColortxt;
+            animation-duration: 5s;
+        }
+    }   
+    .section-2{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/4;
+        grid-row: 2;
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        line-height: 30px;
+        font-size: larger;
+        .img-pags{
+            width: 70%;
+        }
+        .txt-pags{
+            background-color: blanchedalmond;
+            padding: 10px;
+            border: solid black 2px;
+            animation-name: CambioColortxt;
+            animation-duration: 5s;
+        }
+    } 
+    .section-3{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/4;
+        grid-row: 3;
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        line-height: 30px;
+        font-size: larger;
+        .img-pags{
+            width: 70%;
+        }
+        .txt-pags{
+            background-color: blanchedalmond;
+            padding: 10px;
+            border: solid black 2px;
+            animation-name: CambioColortxt;
+            animation-duration: 5s;
+        }
+    }   
+    .section-4{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/4;
+        grid-row: 4;
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        line-height: 30px;
+        font-size: larger;
+        .img-pags{
+            width: 70%;
+        }
+        .txt-pags{
+            background-color: blanchedalmond;
+            padding: 10px;
+            border: solid black 2px;
+            animation-name: CambioColortxt;
+            animation-duration: 5s;
+        }
+    }
+}
+
+.titulo{
+    background-color: blanchedalmond;
+    text-align: center;
+    border-radius:10px ;
+    padding: 10px;
+  }
+
+/*=========================================================================================================================*/
+@media (min-width:1201px){
+    .main-tortas{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        .section-1{
+            display: flex;
+            flex-direction: row;
+            grid-column: 1/4;
+            grid-row: 1;
+            padding: 30px;
+            gap: 5px;
+            align-items: center;
+            line-height: 30px;
+            font-size: larger;
+        }
+        .section-2{
+            display: flex;
+            flex-direction: row;
+            grid-column: 1/4;
+            grid-row: 2;
+            padding: 30px;
+            gap: 5px;
+            align-items: center;
+            line-height: 30px;
+            font-size: larger;
+        }
+        .section-3{
+            display: flex;
+            flex-direction: row;
+            grid-column: 1/4;
+            grid-row: 3;
+            padding: 30px;
+            gap: 5px;
+            align-items: center;
+            line-height: 30px;
+            font-size: larger;
+        }
+        .section-4{
+            display: flex;
+            flex-direction: row;
+            grid-column: 1/4;
+            grid-row: 4;
+            padding: 30px;
+            gap: 5px;
+            align-items: center;
+            line-height: 30px;
+            font-size: larger;
+        }
+    } 
+    
+    .publicidad-pags{
+        display: flex;
+        grid-column: 4/6;
+        grid-row: 1/5;
+        margin: 15px;
+        .img-publicidad-pags{
+            width: 60%;
+        }
+    }
+}

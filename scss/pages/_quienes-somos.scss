@@ -1,0 +1,44 @@
+.main-quienes-somos{
+    padding: 50px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .h1-quienes-somos{
+        display: flex;
+        justify-content: center;
+        margin-bottom:50px;
+    }  
+    .img-quienes-somos{
+        border: 3px rgb(245, 214, 241) solid;
+        width: 275px;
+        height: 200px;
+        margin: 10px;
+    }
+    .txt-quienes-somos{
+        font-size: larger;
+        line-height: 40px;
+    }
+}
+
+.main-colaboraciones{
+    display: flex;
+}
+
+.titulo{
+    background-color: blanchedalmond;
+    text-align: center;
+    border-radius:10px ;
+    padding: 10px;
+  }
+
+/*=========================================================================================================================*/
+@media (min-width:1201px){
+    
+    .txt-quienes-somos{
+        font-size:xx-large;
+        line-height: 60px;
+    }
+
+}

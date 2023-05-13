@@ -1,0 +1,90 @@
+header{
+    background-color:  rgb(245, 214, 241);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+        .img-header{
+        width: 160px ;
+        height: 75px;
+        }
+        .ul-nav{
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            .li-nav{
+                margin: 12px;
+                .lista{
+                    list-style: none;
+                    text-decoration: none;
+                    color: violet;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background-color:blanchedalmond;
+                    padding: 1px;
+                    animation-name: CambioColor;
+                    animation-duration: 5s;
+                }
+            }
+ 
+        }
+        .barra-busqueda{
+        display: none;
+        }
+}
+
+/*=========================================================================================================================*/
+@media (min-width:600px) and (max-width:1200px){
+    
+    header{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(100px, 8vh);
+        .img-header{
+            width: 220px ;
+            height: 100px;
+        }
+        .barra-busqueda{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .lista-nav{
+            grid-column: span 2;
+            .ul-nav{
+                display: flex;
+                justify-content: space-around;
+                .lista{
+                    display: flex;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    transition: width 1s, height 1s, margin 2s;
+                    .lista-hover{
+                        width: 15%;
+                        height: 45px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*=========================================================================================================================*/
+@media (min-width:1201px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .barra-busqueda{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+}
